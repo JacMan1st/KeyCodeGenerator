@@ -4,6 +4,30 @@
     box-sizing: border-box;
 }
 
+#welcome {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 250px;
+    font-size: 60px;
+    transition: opacity 1s ease-in-out, height 0s 1s;
+    opacity: 1;
+    height: auto;
+    overflow: hidden;
+}
+
+#mainContent {
+    display: none;
+    /* visibility: hidden; */
+    transition: opacity 1s ease-in-out;
+}
+
+.visible {
+    display: flex;
+    opacity: 1;
+    
+}
+
 body {
     background-color: gray;
     font-size: 20px;
@@ -23,9 +47,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 90%;
-    max-width: 1000px;
-    margin: 0 auto; */
+    margin-top: -500px;
 }
 
 .container div {

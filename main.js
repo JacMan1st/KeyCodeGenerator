@@ -1,4 +1,21 @@
 
+document.addEventListener("DOMContentLoaded", ()=>{
+    const welcomeMessage = document.getElementById("welcome");
+    const mainContent = document.getElementById("mainContent");
+
+    setTimeout(()=>{
+        welcomeMessage.style.opacity = "0";
+
+        setTimeout(()=>{
+            welcomeMessage.style.height = "0";
+            mainContent.style.display = "flex";
+
+            mainContent.offsetHeight;
+            
+            mainContent.classList.add("visible");
+        },900);
+    }, 4000);
+});
 
 
 const displayKey = document.querySelector(".key h2");
