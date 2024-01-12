@@ -13,6 +13,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
             mainContent.offsetHeight;
             
             mainContent.classList.add("visible");
+
+            // hidden input field to show  keyboard
+            document.getElementById("hiddenInput").focus();
         },900);
     }, 4000);
 });
